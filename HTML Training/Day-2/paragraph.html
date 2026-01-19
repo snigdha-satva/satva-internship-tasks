@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="paraStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="changes">
+        <header>
+            <nav class="navbar">
+                <h2>Modal title</h2>
+                <h2>x</h2>
+            </nav>
+        </header>
+        <section class="functions">
+            <div class="buttons">
+                <button><i class="bi bi-link-45deg"></i></button>
+                <button><i class="bi bi-bookmark"></i></button>
+                <button onclick="align('left')"><i class="bi bi-text-left"></i></button>
+                <button onclick="align('center')"><i class="bi bi-text-center"></i></button>
+                <button onclick="align('right')"><i class="bi bi-text-right"></i></button>
+                <button onclick="align('justify')"><i class="bi bi-justify"></i></button>
+            </div>
+        </section>
+        <section class="para">
+            <textarea name="txt" id="txt" cols="30" rows="10" spellcheck="false">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunaaaaaaat mollit anim id est laborum.
+            </textarea>
+        </section>
+        <div class="footer">
+            <button class="close">Close</button>
+            <button class="save">Save changes</button>
+        </div>
+    </div>
+
+    <script>
+        function align(alignment)
+        {
+            document.getElementById('txt').style.textAlign = alignment;
+        }
+    </script>
+</body>
+</html>

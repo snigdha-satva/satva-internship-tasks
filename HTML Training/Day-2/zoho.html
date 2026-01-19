@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Customer</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="zoho.css">
+</head>
+
+<body>
+
+<div class="content">
+
+    <div class="side">
+        <div class="menu">
+
+            <div class="item">
+                <i class="bi bi-speedometer2"></i> Dashboard
+            </div>
+
+            <div class="item">
+                <i class="bi bi-box"></i> Items
+            </div>
+
+            <div class="item">
+                <i class="bi bi-bank"></i> Banking
+            </div>
+
+            <div class="item sales">
+
+                <input type="checkbox" id="sales">
+
+                <label for="sales" class="label">
+                    <span><i class="bi bi-cart"></i> Sales</span>
+                    <i class="bi bi-caret-right-fill"></i>
+                </label>
+
+                <div class="submenu">
+                    <div class="sub customer" 
+                         onclick="this.style.background='#3a3838'">
+                        Customers
+                        <i class="bi bi-plus plus"></i>
+                    </div>
+
+                    <div class="sub">Retainer Invoices</div>
+                    <div class="sub">Invoices</div>
+                    <div class="sub">Payments Received</div>
+                    <div class="sub">Recurring Invoices</div>
+                    <div class="sub">Credit Notes</div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <i class="bi bi-bag"></i> Purchases&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+                <i class="bi bi-caret-right-fill"></i>
+            </div>
+
+            <div class="item">
+                <i class="bi bi-clock"></i> Time Tracking&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;
+                <i class="bi bi-caret-right-fill"></i>
+            </div>
+
+            <div class="item">
+                <i class="bi bi-receipt"></i> e-Way Bills
+            </div>
+
+            <div class="item">
+                <i class="bi bi-file-earmark-text"></i> GST Filing
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form">
+        <h2>New Customer</h2>
+
+        <form class="customer1">
+
+            <div class="row">
+                <label class="underlined">Customer Type</label>
+                <div class="radio">
+                    <input type="radio" name="type" required> Business
+                    <input type="radio" name="type"> Individual
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="underlined">Primary Contact</label>
+                <div class="group">
+                    <select id="salutation" required>
+                        <option value="">Salutation</option>
+                        <option>Mr</option>
+                        <option>Ms</option>
+                        <option>Mrs</option>
+                    </select>
+
+                    <input type="text" id="Fname" placeholder="First Name" required autofocus>
+                    <input type="text" id="Lname" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <label>Company Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="row">
+                <label class="redd">Customer Display Name*</label>
+                <select required>
+                    <option value=""></option>
+                    <option>Name</option>
+                    <option>Company Name</option>
+                    <option>UniqueID</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Customer Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="row">
+                <label>Customer Phone</label>
+                <div class="group">
+                    <input type="tel" placeholder="Work Phone" required pattern="[0-9]{10}">
+                    <input type="tel" placeholder="Mobile" required pattern="[0-9]{10}">
+                </div>
+            </div>
+            <div class="more">Add more details</div>
+
+
+            <div class="row">
+                <label>Website</label>
+                <input type="url" required pattern="https?://(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_.\+~#?&//=]*)">
+            </div>
+
+            <div class="buttons">
+                <button class="save" type="submit">Save</button>
+                <button class="cancel" type="reset">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

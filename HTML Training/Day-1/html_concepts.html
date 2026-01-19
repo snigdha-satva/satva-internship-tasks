@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="https://www.google.com" class="nav-elements" target="_blank">Google</a>
+                <a href="https://www.youtube.com" class="nav-elements" target="_blank">YouTube</a>
+                <a href="https://www.github.com" class="nav-elements" target="_blank">GitHub</a>
+            </div>
+        </nav>
+        <h1>My HTML Practice Page</h1>
+    </header>
+
+    <div class="content">
+        <section class="section">
+            <div class="center">
+
+                <h2>Heading</h2>
+                
+                <p onmouseover="this.style.color='blue'" onmouseout="this.style.color='red'"
+                ondblclick="alert('Paragraph Double Clicked!')">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quaerat ad distinctio excepturi! Esse sit animi a veritatis dolor. Consequatur molestiae expedita possimus laboriosam repudiandae, at reprehenderit qui tenetur inventore.
+            </p>
+            
+            <img class = "imgs" src="https://picsum.photos/400/300" alt="Sample Image" onclick="alert('Image Clicked!')">
+        </div>
+        </section>
+
+        <aside class="aside">
+            <h2>Contact Form</h2>
+
+            <form method="post" name="contactForm">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="username" placeholder="Enter your name" minlength="3" maxlength="20"
+                    required onfocus="this.style.backgroundColor='purple'">
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="useremail" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="10" max="100" required>
+                <br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <br><br>
+
+                <label for="course">Course:</label><br>
+                <select name="course" id="course" required>
+                    <option value="">Select a course</option>
+                    <option value="html" selected>HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+                <br><br>
+
+                <button type="submit" class="submit1">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </aside>
+
+    </div>
+
+    <article>
+        <h2>Article Section</h2>
+        <p>
+            Semantic HTML improves readability and accessibility of web pages.
+        </p>
+    </article>
+
+    <footer>
+        <h3>Footer</h3>
+        <p>&copy; 2026 HTML Practice Page</p>
+    </footer>
+
+</body>
+
+</html>

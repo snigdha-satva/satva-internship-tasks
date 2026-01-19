@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <canvas id="canvas1" width="500" height="400"></canvas>
+    <script>
+        var rect = document.getElementById("canvas1");
+        var ctx = rect.getContext("2d");
+        
+        ctx.fillStyle = "pink"
+        ctx.fillRect(10, 10, 250, 170);
+
+        ctx.globalAlpha = 0.3
+        ctx.fillStyle = "green";
+        ctx.fillRect(80, 60, 250, 200);
+    </script>
+</body>
+</html>

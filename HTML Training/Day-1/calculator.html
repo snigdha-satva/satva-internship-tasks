@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Design</title>
+    <style>
+        body {
+            background-color: rgb(118, 196, 241);
+        }
+
+        .tables {
+            max-width: 80%;
+            width: 70%;
+            margin-left: 15%;
+            border-radius: 12px;
+            overflow: hidden;
+            border-collapse: collapse;
+        }
+
+        td {
+            background-color: white;
+            color: black;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .output {
+            background-color: rgb(29, 27, 27);
+            color: white;
+            font-size: 18;
+            text-align: right;
+        }
+
+        .operator td {
+            background-color: rgb(236, 228, 228);
+        }
+
+        .equal {
+            background-color: rgb(221, 101, 57);
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tables" border="1px">
+        <tr>
+            <td colspan="4" class="output">0</td>
+        </tr>
+        <tr class="operator">
+            <td>+</td>
+            <td>-</td>
+            <td>x</td>
+            <td>&divide;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td class="equal" rowspan="4">=</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>.</td>
+            <td>AC</td>
+        </tr>
+    </table>
+</body>
+
+</html>

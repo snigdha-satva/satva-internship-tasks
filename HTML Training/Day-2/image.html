@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Validation</title>
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <fieldset>
+            <h1 class="heading">Allow Only If Image</h1>
+        </fieldset>
+        <fieldset>
+            <label for="select">Select Image: </label>
+            <!-- We can also use the "accept" attribute but it won't allow the user to add any other type of file. -->
+            <input type="file" name="file" id="file" required>
+            <br>
+            <input type="submit" value="Upload">
+            <br>
+            <label for="imageValid" id="validation"></label>
+            <br>
+            <label for="fileType" id="fileType"></label>
+        </fieldset>
+    </form>
+    <script>
+        document.getElementById('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const file = document.getElementById('file');
+            const imgStatus = document.getElementById('validation');
+            const fileType = document.getElementById('fileType');
+
+            var filename = file.value;
+            var parts = filename.split('.');
+            var fileExt = parts[parts.length - 1];
+            
+            if (['png', 'jpeg', 'jpg', 'gif', 'webp', 'avif', 'bmp'].includes(fileExt))
+            {
+                imgStatus.textContent = "File is Image";
+                fileType.textContent = "File type = " + fileExt;
+            }
+            else
+            {
+                imgStatus.textContent = "File is Not Image";
+                fileType.textContent = null;
+            }
+        });
+    </script>
+</body>
+</html>

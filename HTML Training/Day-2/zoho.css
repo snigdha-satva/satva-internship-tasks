@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f6f8;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side {
+    width: 230px;
+    background: #2e2c2c;
+    color: white;
+}
+
+.menu {
+    padding-top: 15px;
+}
+
+.item {
+    padding-top: 12px;
+    /* padding-bottom: 5px; */
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.item i {
+    margin-right: 10px;
+}
+
+.active {
+    background: #1f7ae0;
+}
+
+.sales input {
+    display: none;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    transition: 0.3s;
+}
+
+.submenu {
+    display: none;
+    width: 100%;
+}
+
+.sales input:checked + .label + .submenu {
+    display: block;
+}
+
+.sales input:checked + .label .arrow {
+    transform: rotate(90deg);
+}
+
+.sub {
+    padding: 8px 20px;
+    font-size: 13px;
+    color: #cfcfcf;
+    background: #2e2c2c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.customer {
+    color: #1f7ae0;
+    font-size: 14px;
+}
+
+.plus {
+    color: #1f7ae0;
+}
+
+.item:hover {
+    background-color: #1f7ae0;
+}
+
+.sub:hover {
+    background-color: #141414;
+}
+.form {
+    flex: 1;
+    background: white;
+    padding: 25px 40px;
+}
+
+.form h2 {
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.customer {
+    max-width: 800px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.row label {
+    width: 200px;
+    font-size: 14px;
+}
+
+.radio input {
+    margin: 0 5px 0 10px;
+}
+
+.group {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+input, select {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.redd {
+    color: red;
+}
+
+.more {
+    font-size: 13px;
+    color: #1f7ae0;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.save {
+    background: #1f7ae0;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+
+.cancel {
+    background: #e0e0e0;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.underlined {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #2e2c2c;
+}
+
+.customer1 {
+    font-size: 14px;
+}
+
+.space {
+    justify-content: space-between;
+}

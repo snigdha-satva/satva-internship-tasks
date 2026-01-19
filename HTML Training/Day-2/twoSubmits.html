@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Different Submits</title>
+    <style>
+        .content {
+            display: flex;
+            align-items: flex-start;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form {
+            margin: 5px;
+            max-width: 40%;
+            width: 200px;
+        }
+
+        #heading {
+            font-size: 20px;
+        }
+
+        .buttons {
+            background-color: rgb(58, 111, 182);
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        .tables {
+            padding: 5px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        .tables table {
+            border-collapse: collapse;
+            max-width: 80%;
+            width: 500px;
+        }
+
+        .tables table th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="form">
+            <form>
+                <label for="heading" id="heading">Submit Form</label>
+                <br><br>
+                <label for="firstName">Firstname</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br><br>
+            </form>
+            <button onclick="submit1Update(event)" id="submit1" class="buttons">Submit1</button>
+            <button onclick="submit2Update(event)" id="submit2" class="buttons">Submit2</button>
+        </div>
+
+        <div class="tables">
+            <table border="1">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Submitted Via</th>
+                </tr>
+                <tr>
+                    <td id="update1">neovic</td>
+                    <td>Submit1</td>
+                </tr>
+                <tr>
+                    <td id="update2">gemaiyn</td>
+                    <td>Submit2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const Fname = document.getElementById('name');
+        const name1 = document.getElementById('update1');
+        const name2 = document.getElementById('update2');
+
+        function submit1Update(e) {
+            e.preventDefault();
+            name1.textContent = Fname.value;
+        }
+
+        function submit2Update(e) {
+            e.preventDefault();
+            name2.textContent = Fname.value;
+        }
+    </script>
+</body>
+
+</html>

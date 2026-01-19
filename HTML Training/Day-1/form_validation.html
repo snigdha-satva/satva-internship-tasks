@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+    <style>
+        .forms {
+            border: 1px solid black;
+            padding: 10px;
+            max-width: 80%;
+            margin-left: 10%;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" class="forms">
+        <label for="name">First Name:</label>
+        <br>
+        <input type="text" name="name" id="name" value = "" required placeholder="Enter First Name">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <br>
+        <input type="text" name="lname" id="lname" required placeholder="Enter Last Name">
+        <br>
+        <label for="email"  pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" required placeholder="Enter email">
+        <br>
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" name="age" id="age" required placeholder="Enter Age" min="1" max="150">
+        <br>
+        <label for="linkedin">LinkedIn Profile Link:</label>
+        <br>
+        <input type="url" name="linkedin" id="linkedin" required placeholder="Enter LinkedIn Profile Link" pattern="^https?:\/\/(www\.)?([a-z0-9-]+\.)*linkedin\.com(\/.*)?$">
+        <br>
+        <label for="num1020">Number between 10 & 20:</label>
+        <br>
+        <input type="number" name="num1020" id="num1020" required size = 10 min = "10" max="20" placeholder="Enter Number Between 10 & 20">
+        <br>
+        <label for="password">Password (1 UpperCase, 1 LowerCase, 1 Number, min 5 chars):</label>
+        <br>
+        <input type="password" name="password" id="password" required placeholder="Enter Password"
+               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$"
+               title="Password must have at least 5 characters, including 1 uppercase, 1 lowercase, and 1 number">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
