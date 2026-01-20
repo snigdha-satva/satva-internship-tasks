@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shipping Address</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="task-5.css">
+</head>
+
+<body class="bodyTask5">
+    <div class="container my-5">
+        <div class="form-wrapper border border-secondary">
+            <div class="form-title">
+                <h1>Shipping Address</h1>
+            </div>
+            <form id="shippingForm" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="First Name" autofocus required pattern="^[A-Za-z\s]+$">
+                    <div class="invalid-feedback">Enter a valid first name</div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="last Name" required pattern="^[A-Za-z\s]+$">
+                    <div class="invalid-feedback">Enter a valid last name</div>
+                </div>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" minlength="5" maxlength="15" placeholder="Address" required>
+                    <div class="invalid-feedback">Address is required</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Apt" required maxlength="10">
+                    <div class="invalid-feedback">Enter the appartment name.</div>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="City" maxlength="15" required pattern="^[A-Za-z\s]+$">
+                    <div class="invalid-feedback">Enter a valid city name</div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select text-secondary" required>
+                        <option value="" selected disabled>State</option>
+                        <option>Gujarat</option>
+                        <option>U.P.</option>
+                        <option>Bihar</option>
+                    </select>
+                    <div class="invalid-feedback">State is required</div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="ZIP Code" required maxlength="6"
+                        pattern="[0-9]{6}">
+                    <div class="invalid-feedback">Enter valid 6-digit PIN code</div>
+                </div>
+                <div class="col-md-8">
+                    <input type="email" class="form-control" placeholder="Email address for receipt" required>
+                    <div class="invalid-feedback">Enter a valid email address</div>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Primary Phone" maxlength="10" required
+                        pattern="[0-9]{10}">
+                    <div class="invalid-feedback">Enter valid 10-digit mobile number</div>
+                </div>
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-continue">CONTINUE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="task-5.js"></script>
+</body>
+
+</html>

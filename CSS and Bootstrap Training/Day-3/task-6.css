@@ -1,0 +1,285 @@
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+background: #19b5bc;
+padding: 0;
+}
+
+.navbar-brand {
+color: #fff;
+font-weight: 700;
+padding: 20px 30px;
+font-size: 2rem;
+letter-spacing: 0.07em;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-size:14px;
+    letter-spacing:1px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link:hover{
+    color:#182a2b !important;
+    transform: translateY(-3px);
+  }
+  
+  .nav-link::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-4px;
+    background:#182a2b;
+    transition: width 0.3s;
+  }
+  
+  .nav-link:hover::after{
+    width:100%;
+  }
+
+.carousel {
+margin: 8% 2% 2% 2% !important;
+}
+
+.carousel-item img {
+height: 420px;
+object-fit: cover;
+width: 100%;
+border-radius: 6px;
+}
+
+.section-title {
+text-align: center;
+margin: 70px 0 30px;
+font-weight: 600;
+font-size: 2.2rem;
+letter-spacing: 0.05em;
+}
+
+.section-text {
+text-align: center;
+color: #555;
+max-width: 720px;
+margin: 0 auto 60px;
+font-size: 18px;
+line-height: 1.75;
+font-weight: 400;
+}
+
+.feature-box {
+text-align: center;
+padding: 30px 25px;
+transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+transform: translateY(-6px);
+}
+
+.feature-icon {
+font-size: 48px;
+color: #19b5bc;
+margin-bottom: 20px;
+user-select: none;
+}
+
+.feature-box h5 {
+font-weight: 600;
+margin-bottom: 15px;
+font-size: 1.3rem;
+letter-spacing: 0.04em;
+}
+
+.feature-box p {
+font-size: 16px;
+color: #666;
+margin-bottom: 20px;
+font-weight: 400;
+}
+
+.feature-box a {
+font-size: 14px;
+text-decoration: none;
+padding: 8px 22px;
+border-radius: 3px;
+}
+
+.gallery img {
+width: 100%;
+height: 210px;
+object-fit: cover;
+border-radius: 6px;
+}
+
+footer {
+background: #12949a;
+color: #fff;
+padding: 40px 0;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+letter-spacing: 0.04em;
+}
+/* Extra small screens */
+@media (max-width: 200px) {
+    body {
+        padding-top: 25%;
+    }
+}
+
+/* Small screens */
+@media (max-width: 400px) {
+    body {
+        padding-top: 5%;
+    }
+}
+
+/* Slightly larger small screens */
+@media (max-width: 500px) {
+    body {
+        padding-top: 5%;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1000.98px) {
+    body {
+        padding-top: 4%;
+    }
+}
+
+/* Large screens */
+@media (max-width: 2000px) {
+    body {
+        padding-top: 1%;
+    }
+}
+
+@media (max-width: 1000.98px) {
+body {
+    padding-top: 4%;
+}
+.navbar-brand {
+    font-size: 1.7rem;
+    padding: 18px 20px;
+}
+
+.navbar-nav .nav-link {
+    padding: 18px 15px;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    margin: 60px 0 25px;
+}
+
+.section-text {
+    font-size: 16px;
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+.feature-box {
+    padding: 25px 15px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.feature-box h5 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.feature-box a {
+    font-size: 13px;
+    padding: 7px 18px;
+}
+
+.gallery img {
+    height: 180px;
+}
+}
+
+@media (max-width: 575.98px) {
+.carousel-item img {
+    height: 270px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin: 50px 0 20px;
+}
+
+.section-text {
+    font-size: 14px;
+    max-width: 55%;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.feature-box {
+    padding: 20px 10px;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-box h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.feature-box a {
+    font-size: 12px;
+    padding: 6px 14px;
+}
+
+.gallery img {
+    height: 140px;
+}
+}
+
+/* Slider-style carousel indicators */
+.custom-indicators {
+    position: relative;
+    margin-top: 12px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.custom-indicators [data-bs-target] {
+    width: 40px;
+    height: 4px;
+    background-color: #ccc;
+    border: none;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.custom-indicators .active {
+    background-color: #19b5bc;
+    width: 60px;
+}
