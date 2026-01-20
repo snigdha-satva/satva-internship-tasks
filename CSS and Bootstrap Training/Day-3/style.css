@@ -146,6 +146,15 @@
   width:100%;
 }
 
+.nav-link.active{
+  color:#182a2b !important;
+  transform: translateY(-3px);
+}
+
+.nav-link.active::after{
+  width:100%;
+}
+
 .hero{
   background:#78c2b8;
   color:#fff;

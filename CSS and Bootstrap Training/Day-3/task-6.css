@@ -283,3 +283,12 @@ body {
     background-color: #19b5bc;
     width: 60px;
 }
+
+.nav-link.active{
+    color:#182a2b !important;
+    transform: translateY(-3px);
+  }
+  
+  .nav-link.active::after{
+    width:100%;
+  }
