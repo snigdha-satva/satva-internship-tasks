@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="task-3.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div id="registrationWrapper">
+
+                <h2 id="registrationTitle">REGISTRATION</h2>
+                <form id="registrationForm" class="needs-validation" novalidate>
+                    <div class="tab">
+                        <div id="profileTitle">PERSONAL DETAILS</div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="firstName" class="form-control formControlCustom"
+                                   placeholder="First Name..." required pattern="[A-Za-z]{2,}" autofocus>
+                            <div class="invalid-feedback">Enter a valid first name (at least 2 letters)</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="lastName" class="form-control formControlCustom"
+                                   placeholder="Last Name..." required pattern="[A-Za-z]{2,}">
+                            <div class="invalid-feedback">Enter a valid last name (at least 2 letters)</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <select id="genderSelect" class="form-control form-select formControlCustom" required>
+                                <option value="">Select Gender...</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select gender</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="zipCodeInput" class="form-control formControlCustom"
+                                   placeholder="Zip Code..." maxlength="6" required pattern="[0-9]{6}">
+                            <div class="invalid-feedback">Enter a 6-digit zip code</div>
+                        </div>
+                    </div>
+                
+                    <div class="tab">
+                        <div id="profileTitle">PROFILE INFORMATION</div>
+                
+                        <div class="mb-3">
+                            <input type="email" id="emailInput" class="form-control formControlCustom"
+                                   placeholder="E-mail..." required>
+                            <div class="invalid-feedback">Enter a valid email address</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="usernameInput" class="form-control formControlCustom"
+                                   placeholder="Username..." required pattern="[A-Za-z0-9]{4,}">
+                            <div class="invalid-feedback">Username must be at least 4 characters (letters & numbers)</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="password" id="passwordInput" class="form-control formControlCustom"
+                                   placeholder="Password..." required minlength="6">
+                            <div class="invalid-feedback">Password must be at least 6 characters</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="password" id="confirmPasswordInput" class="form-control formControlCustom"
+                                   placeholder="Confirm Password..." required minlength="6">
+                            <div class="invalid-feedback">Passwords must match</div>
+                        </div>
+                    </div>
+                
+                    <div class="tab">
+                        <div id="profileTitle">BANK INFORMATION</div>
+                
+                        <div class="mb-3">
+                            <select id="bankSelect" class="form-control formControlCustom" required>
+                                <option value="">Choose Bank...</option>
+                                <option>Bank A</option>
+                                <option>Bank B</option>
+                                <option>Bank C</option>
+                            </select>
+                            <div class="invalid-feedback">Select bank</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <select id="branchSelect" class="form-control formControlCustom form-select" required>
+                                <option value="">Choose Branch...</option>
+                                <option>Main</option>
+                                <option>City</option>
+                                <option>Suburban</option>
+                            </select>
+                            <div class="invalid-feedback">Select branch</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <select id="accountTypeSelect" class="form-control formControlCustom form-select" required>
+                                <option value="">Account Type...</option>
+                                <option>Savings</option>
+                                <option>Current</option>
+                            </select>
+                            <div class="invalid-feedback">Select account type</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="accountNumberInput" class="form-control formControlCustom"
+                                   placeholder="Account Number..." maxlength="16" required pattern="[0-9]{8,16}">
+                            <div class="invalid-feedback">Enter valid account number (8-16 digits)</div>
+                        </div>
+                    </div>
+                
+                    <div class="tab">
+                        <div id="profileTitle">PAYMENT INFORMATION</div>
+                
+                        <div class="mb-3">
+                            <select id="cardTypeSelect" class="form-control formControlCustom form-select" required>
+                                <option value="">Select Card Type...</option>
+                                <option>Master Card</option>
+                                <option>Visa</option>
+                                <option>RuPay</option>
+                            </select>
+                            <div class="invalid-feedback">Select card type</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="cardHolderName" class="form-control formControlCustom"
+                                   placeholder="Card Holder Name..." required pattern="[A-Za-z ]{3,}">
+                            <div class="invalid-feedback">Enter card holder name (at least 3 letters)</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="cardNumberInput" class="form-control formControlCustom"
+                                   placeholder="Card Number..." required maxlength="5" pattern="[0-9]{5}">
+                            <div class="invalid-feedback">Enter valid card number (5 digits)</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="text" id="cvvInput" class="form-control formControlCustom"
+                                   placeholder="CVV..." required maxlength="3" pattern="[0-9]{3}">
+                            <div class="invalid-feedback">Enter 3-digit CVV</div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <input type="month" id="validityDateInput" class="form-control formControlCustom" required>
+                            <div class="invalid-feedback">Select validity date</div>
+                        </div>
+                    </div>
+                </form>
+                
+
+                <div class="tab">
+                    <div id="profileTitle"><h3>USER DETAILS</h3></div>
+                    <table class="table mt-2 table-secondary">
+                        <tbody>
+                            <tr><td>First Name</td><td id="userFirstNameValue"></td></tr>
+                            <tr><td>Last Name</td><td id="userLastNameValue"></td></tr>
+                            <tr><td>Gender</td><td id="userGenderValue"></td></tr>
+                            <tr><td>Zip Code</td><td id="userZipCodeValue"></td></tr>
+                            <tr><td>Email</td><td id="userEmailValue"></td></tr>
+                            <tr><td>Username</td><td id="userUsernameValue"></td></tr>
+                            <tr><td>Password</td><td id="userPasswordValue"></td></tr>
+                            <tr><td>Bank Name</td><td id="userBankNameValue"></td></tr>
+                            <tr><td>Branch Name</td><td id="userBranchNameValue"></td></tr>
+                            <tr><td>Account Type</td><td id="userAccountTypeValue"></td></tr>
+                            <tr><td>Account Number</td><td id="userAccountNumberValue"></td></tr>
+                            <tr><td>Card Type</td><td id="userCardTypeValue"></td></tr>
+                            <tr><td>Card Holder Name</td><td id="userCardHolderValue"></td></tr>
+                            <tr><td>Card Number</td><td id="userCardNumberValue"></td></tr>
+                            <tr><td>CVV</td><td id="userCvvValue"></td></tr>
+                            <tr><td>Validity Date</td><td id="userValidityDateValue"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="buttonGroup">
+                    <button id="previousButton" class="btn">Previous</button>
+                    <button id="nextButton" class="btn">Next</button>
+                </div>
+
+                <div id="stepIndicator">
+                    <div class="stepDot active"></div>
+                    <div class="stepDot"></div>
+                    <div class="stepDot"></div>
+                    <div class="stepDot"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="task-3.js"></script>
+</body>
+</html>

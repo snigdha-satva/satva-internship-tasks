@@ -1,0 +1,76 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Georgia, serif;
+}
+
+#registrationWrapper {
+    background-color: #dcdcdc;
+    padding: 30px 50px 60px;
+    margin-top: 60px;
+    border-radius: 4px;
+}
+
+#registrationTitle {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+#profileTitle {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.formControlCustom {
+    height: 48px;
+    margin-bottom: 18px;
+}
+
+#buttonGroup {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#previousButton {
+    background: linear-gradient(#ffb347, #ff9800);
+    border: none;
+    color: white;
+    width: 140px;
+    height: 45px;
+    font-weight: 500;
+}
+
+#nextButton {
+    background: linear-gradient(#6ecf68, #4caf50);
+    border: none;
+    color: white;
+    width: 140px;
+    height: 45px;
+    font-weight: 500;
+}
+
+#stepIndicator {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.stepDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+}
+
+.stepDot.active {
+    background-color: #6ecf9f;
+}
+
+h3 {
+    align-items: center;
+    text-align: center;
+}
