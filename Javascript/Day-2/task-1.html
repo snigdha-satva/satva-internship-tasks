@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Storage Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+
+    <div class="container formWrapper">
+        <h4 class="mb-4">DAY-2 Task 1</h4>
+
+        <form id="registerForm" novalidate>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label>Name</label>
+                    <input type="text" name="nameInput" id="nameInput" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Mobile</label>
+                    <input type="number" name="mobileInput" id="mobileInput" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Email</label>
+                    <input type="text" name="emailInput" id="emailInput" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>College Name</label>
+                    <input type="text" name="collegeNameInput" id="collegeNameInput" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>CGPA</label>
+                    <input type="number" name="cgpaInput" id="cgpaInput" class="form-control">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label>Branch Name</label>
+                    <select name="branchSelectInput" id="branchSelect" class="form-control">
+                        <option value="">Choose Branch..</option>
+                        <option value="CSE">CSE</option>
+                        <option value="EC">EC</option>
+                        <option value="AIML">AIML</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label>State</label>
+                    <input type="text" name="stateInput" id="stateInput" class="form-control">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label>City</label>
+                    <input type="text" name="cityInput" id="cityInput" class="form-control">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label>Zip</label>
+                    <input type="number" name="zipInput" id="zipInput" class="form-control">
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label>From To When You Studied</label>
+                    <input type="text" name="dateRange" id="durationInput" class="form-control">
+                </div>
+            </div>
+            <div class="summaryBox mb-3">
+                <strong>Summary:</strong>
+                <br>
+                <strong>Add New</strong> - A new row will be stored in local storage.
+                <br>
+                <strong>Export</strong> - All the data will be visible in the table below.
+                <br>
+                <strong>Clear Storage</strong> - Removes all data stored in local storage.
+            </div>
+
+            <div class="mb-4">
+                <button type="button" id="addNewBtn" class="btn btn-info">Add New</button>
+                <button type="button" id="exportBtn" class="btn btn-success">Export</button>
+                <button type="button" id="clearStorageBtn" class="btn btn-danger">Clear Storage</button>
+            </div>
+        </form>
+
+        <table class="table table-bordered table-sm">
+            <thead class="thead-light">
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>College</th>
+                    <th>CGPA</th>
+                    <th>Branch</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Zip</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody id="dataTableBody"></tbody>
+        </table>
+
+    </div>
+
+    <script src="task-1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.bodyTask2 {
+    background-color: rgb(108, 179, 219);
+    margin-top: 20px;
+}
+
+.tables {
+    max-width: 80%;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+.output {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    font-size: 18;
+    text-align: right;
+}
+
+.operator td {
+    background-color: rgb(236, 228, 228);
+}
+
+.equal {
+    background-color: rgb(221, 101, 57);
+}
+
+.percent {
+    background-color: brown;
+}
+
+.cancel {
+    background-color: chocolate;
+}
+
+.clear {
+    background-color: rgb(85, 103, 104);
+}
