@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timesheet Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="task-1.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid py-4">
+
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered align-middle" id="excelTable">
+            <thead class="table-light">
+                <tr>
+                    <th>SR.No</th>
+                    <th>Project Name</th>
+                    <th>Timelog Date</th>
+                    <th>Phase</th>
+                    <th>Status</th>
+                    <th>Logged Hours</th>
+                    <th>Billable Hours</th>
+                    <th>Notes</th>
+                    <th>Out of Stock</th>
+                    <th>BC Link</th>
+                    <th>BC Description</th>
+                </tr>
+            </thead>
+            <tbody id="excelTableBody">
+                <tr>
+                    <td class="uid">1</td>
+                    <td>
+                        <select class="form-select projectName">
+                            <option value="">Select</option>
+                            <option>Javascript Project</option>
+                            <option>Training Project</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="date" class="form-control durationInput">
+                    </td>
+                    <td>
+                        <select class="form-select phase">
+                            <option value="">Select</option>
+                            <option>Communication</option>
+                            <option>Analysis</option>
+                            <option>Deployment</option>
+                            <option>Design</option>
+                            <option>Prototype</option>
+                            <option>Bug Fixing</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-select status">
+                            <option value="">Select</option>
+                            <option>Pending</option>
+                            <option>Completed</option>
+                            <option>Solved</option>
+                            <option>Working</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="time" class="form-control loggedHours">
+                    </td>
+                    <td>
+                        <input type="time" class="form-control billableHours">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control notes">
+                    </td>
+                    <td class="text-center">
+                        <input type="checkbox" class="form-check-input outOfStock">
+                    </td>
+                    <td>
+                        <input type="url" class="form-control bcLink">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control bcDescription">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-auto">
+            <button class="btn btn-danger" id="deleteLastRowButton">Delete Last Row</button>
+        </div>
+        <div class="col-auto">
+            <input type="number" min="0" class="form-control" id="addRowCount">
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary" id="addRowButton">Add Row</button>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-dark table-bordered" id="displayTable">
+            <thead>
+                <tr>
+                    <th>SR.No</th>
+                    <th>Project Name</th>
+                    <th>Timelog Date</th>
+                    <th>Phase</th>
+                    <th>Status</th>
+                    <th>Logged Hours</th>
+                    <th>Billable Hours</th>
+                    <th>Notes</th>
+                    <th>Out of Stock</th>
+                    <th>BC Link</th>
+                    <th>BC Description</th>
+                </tr>
+            </thead>
+            <tbody id="displayTableBody"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

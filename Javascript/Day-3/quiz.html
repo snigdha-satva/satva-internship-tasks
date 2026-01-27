@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+</head>
+
+<body class="quizBackground" id="quizBody">
+
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center" id="quizContainer">
+        <div class="col-12 col-md-9 col-lg-6" id="quizColumn">
+            <div class="card quizCard" id="quizCard">
+                <div class="card-body quizBody" id="quizCardBody">
+
+                    <div class="text-center mb-3" id="quizHeader">
+                        <span class="badge bg-primary quizBadge" id="quizBadge">Quiz Game</span>
+                    </div>
+
+                    <form id="quizForm" name="quizForm">
+
+                        <h4 class="text-center fw-semibold mb-4" id="questionTitle"></h4>
+                        <div id="optionsContainer" class="mb-4"></div>
+                        <div class="d-grid" id="nextButtonWrapper">
+                        </div>
+
+                    </form>
+
+                    <div class="d-flex justify-content-between align-items-center mt-4" id="scoreSection">
+                        <span class="fw-medium" id="scoreLabel">Your Score</span>
+                        <span class="fs-5 fw-bold text-primary" id="scoreDisplay">0</span>
+                    </div>
+
+                    <div class="progress mt-3 quizProgress" id="progressContainer">
+                        <div class="progress-bar bg-primary" id="progressBar"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
