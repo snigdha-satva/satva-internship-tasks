@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Grid + Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container my-4 section-border p-3">
+
+    <div class="collapse" id="gridCollapse">
+
+        <h2 class="text-center mb-4">Bootstrap Grid</h2>
+
+        <!-- 4 columns -->
+        <div class="section-box">
+            <div class="section-title">4 columns (12/4 = 3)</div>
+            <div class="row g-2 g-sm-3 g-md-4">
+                <div class="col-12 col-sm-6 col-md-3"><div class="grid-box">col-3</div></div>
+                <div class="col-12 col-sm-6 col-md-3"><div class="grid-box">col-3</div></div>
+                <div class="col-12 col-sm-6 col-md-3"><div class="grid-box">col-3</div></div>
+                <div class="col-12 col-sm-6 col-md-3"><div class="grid-box">col-3</div></div>
+            </div>
+        </div>
+
+        <!-- 3 columns -->
+        <div class="section-box">
+            <div class="section-title">3 columns (12/3 = 4)</div>
+            <div class="row g-2 g-sm-3 g-md-4">
+                <div class="col-12 col-sm-6 col-md-4"><div class="grid-box">col-4</div></div>
+                <div class="col-12 col-sm-6 col-md-4"><div class="grid-box">col-4</div></div>
+                <div class="col-12 col-sm-6 col-md-4"><div class="grid-box">col-4</div></div>
+            </div>
+        </div>
+
+        <!-- 2 columns -->
+        <div class="section-box">
+            <div class="section-title">2 columns (12/6 = 2)</div>
+            <div class="row g-2 g-sm-3 g-md-4">
+                <div class="col-12 col-sm-6 col-md-6"><div class="grid-box">col-6</div></div>
+                <div class="col-12 col-sm-6 col-md-6"><div class="grid-box">col-6</div></div>
+            </div>
+        </div>
+
+        <!-- 1 column -->
+        <div class="section-box">
+            <div class="section-title">1 column (12/1 = 12)</div>
+            <div class="row g-2 g-sm-3 g-md-4">
+                <div class="col-12"><div class="grid-box">col-12</div></div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-center mt-4">Modal</h2>
+
+    <div class="text-center">
+        <button class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#gridCollapse">
+            Click To Open
+        </button>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

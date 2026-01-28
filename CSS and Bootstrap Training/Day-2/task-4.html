@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row Grid System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+<div class="container mt-2">
+
+    <!-- 12 columns -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+        <div class="col-6 col-sm-4 col-md-1"><div class="grid-section">1</div></div>
+    </div>
+
+    <!-- 4 + 4 + 4 -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-12 col-sm-6 col-md-4"><div class="grid-section">4</div></div>
+        <div class="col-12 col-sm-6 col-md-4"><div class="grid-section">4</div></div>
+        <div class="col-12 col-sm-6 col-md-4"><div class="grid-section">4</div></div>
+    </div>
+
+    <!-- 4 + 8 -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-12 col-sm-4 col-md-4"><div class="grid-section">4</div></div>
+        <div class="col-12 col-sm-8 col-md-8"><div class="grid-section">8</div></div>
+    </div>
+
+    <!-- 6 + 6 -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-12 col-sm-6 col-md-6"><div class="grid-section">6</div></div>
+        <div class="col-12 col-sm-6 col-md-6"><div class="grid-section">6</div></div>
+    </div>
+
+    <!-- offset -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-12 col-sm-4 col-md-4"><div class="grid-section">4</div></div>
+        <div class="col-12 col-sm-4 col-md-4 offset-md-4">
+            <div class="grid-section">4 offset 4</div>
+        </div>
+    </div>
+
+    <!-- double offset -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4">
+        <div class="col-12 col-sm-6 col-md-3 offset-md-3">
+            <div class="grid-section">3 offset 3</div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 offset-md-3">
+            <div class="grid-section">3 offset 3</div>
+        </div>
+    </div>
+
+    <!-- single centered -->
+    <div class="row g-2 g-sm-3 g-md-4 mb-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="grid-section">4 offset 4</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
