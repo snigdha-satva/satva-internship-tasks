@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Structure</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--  Structure alignment
+          1. 6 x 6
+          2. 4 x 3
+          3. 4 x 3
+          4. 4 x 3
+          5. 8 x 3
+          6. 4 x 3 -->
+    <div class="container-fluid mt-2">
+        <div class="row main-row">
+      
+          <div class="col-6 col-sm-3 col-md-6">
+            <div class="box h-100">1.</div>
+          </div>
+      
+          <div class="col-3 col-sm-3 col-md-3 d-flex flex-column gap-2">
+            <div class="box flex-fill">2.</div>
+            <div class="box flex-fill">3.</div>
+            <div class="box flex-fill">4.</div>
+          </div>
+      
+          <div class="col-3 col-sm-3 col-md-3 d-flex flex-column gap-2">
+            <div class="box flex-grow-1">5.</div>
+            <div class="box box-small">6.</div>
+          </div>
+      
+        </div>
+      </div>
+      
+</body>
+
+</html>
