@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+    <style>
+        .video {
+            width: 40%;
+            height: 20%;
+            border: 2px solid blueviolet;
+            background-color: rgb(224, 124, 124);
+        }
+
+        .audio {
+            width: 40%;
+            border: 2px solid blueviolet;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="audio">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="video">
+            <h2>Video</h2>
+            <video controls height="300px" width="400px">
+                <source src="video.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
+</body>
+</html>

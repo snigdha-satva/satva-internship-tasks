@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload/Download</title>
+</head>
+<body>
+    <div class="download">
+        <h2>Download Your File</h2>
+        <a href="git_stash.png" download>
+            <button type="button" class="btns">Download</button>
+        </a>
+    </div>
+    <div class="upload">
+        <h2>Upload Your File</h2>
+        <form id="form">
+        <input type="file" id="file" required accept=".xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+        <br><br>
+        <button type="submit">Upload</button>
+    </form>
+    </div>
+    <!-- <script>
+        document.getElementById('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const file = document.getElementById('file');
+            var filename = file.value;
+            var parts = filename.split('.');
+            var fileExt = parts[parts.length - 1];
+            
+            if (['xlsx', 'xlsm', 'xlsb', 'xls', 'xltx', 'xltm', 'csv', 'xlam'].includes(fileExt))
+            {
+                alert('Excel file Uploaded');
+            }
+            else
+            {
+                alert('Add an excel file');
+            }
+        });
+    </script> -->
+</body>
+</html>

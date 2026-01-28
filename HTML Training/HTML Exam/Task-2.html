@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .table1 {
+            border-collapse: collapse;
+            text-align: left;
+        }
+        .table1 th {
+            background-color: rgb(196, 194, 193);
+        }
+
+        h3 {
+            text-align: center;
+        }
+        table {
+            width: 40%;
+            text-align: center;
+            margin-left: 30%;
+            font-size: 18px;
+            max-width: 80%;
+        }
+
+        td, th {
+            padding: 3px;
+        }
+
+        .commute {
+            white-space: nowrap;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabb1">
+        <h3>Invoice</h3>
+        <table class="table1">
+            <tr>
+                <th width="25%">Item/Desc.</th>
+                <th width="25%">Qty.</th>
+                <th width="25%">@</th>
+                <th width="25%">Price</th>
+            </tr>
+            <tr>
+                <td>Paperclips(Box)</td>
+                <td>100</td>
+                <td>1.15</td>
+                <td>115.00</td>
+            </tr>
+            <tr>
+                <td>Paper(Case)</td>
+                <td>10</td>
+                <td>45.99</td>
+                <td>459.90</td>
+            </tr>
+            <tr>
+                <td>Wastepaper Baskets</td>
+                <td>2</td>
+                <td>17.99</td>
+                <td>35.98</td>
+            </tr>
+            <tr>
+                <th colspan="3" style="text-align: left;">Subtotal</th>
+                <td>610.88</td>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: left;">Tax</th>
+                <td>7%</td>
+                <td>42.76</td>
+            </tr>
+            <tr>
+                <th colspan="3" style="text-align: left;">Total</th>
+                <td>653.64</td>
+            </tr>
+        </table>
+    </div>
+    <div class="table2">
+        <h3>Ian's Timetable</h3>
+        <table class="tableTwo" border="1">
+            <tr style="text-align: left;">
+                <td></td>
+                <td></td>
+                <td colspan="3">Morning</td>
+                <td>Lunch</td>
+                <td colspan="4">Afternoon</td>
+                <td colspan="3">Evening</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>9-10 am</td>
+                <td>10-11 am</td>
+                <td>11-12 am</td>
+                <td>1-2 pm</td>
+                <td>2-3 pm</td>
+                <td>3-4 pm</td>
+                <td>4-5 pm</td>
+                <td>5-6 pm</td>
+                <td>6-7 pm</td>
+                <td>7-8 pm</td>
+                <td>8-9 pm</td>
+            </tr>
+            <tr width="14px">
+                <td rowspan="2">Work</td>
+                <td>Monday</td>
+                <td colspan="3">Development Meeting</td>
+                <td></td>
+                <td colspan="3">Client Meeting</td>
+                <td class="commute">Comm<br>ute</td>
+                <td colspan="3">Free</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="3">In Office</td>
+                <td></td>
+                <td colspan="7">In Office</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lecture</td>
+                <td>Wednesday</td>
+                <td colspan="3">CSC205</td>
+                <td></td>
+                <td colspan="7">Preparation</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td colspan="3">MAM200</td>
+                <td></td>
+                <td colspan="3">Tutorials for MAM200</td>
+                <td colspan="4">Free</td>
+            </tr>
+            <tr>
+                <td>Research</td>
+                <td>Friday</td>
+                <td colspan="3">Research</td>
+                <td></td>
+                <td colspan="7">Research</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

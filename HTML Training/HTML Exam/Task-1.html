@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+
+<body>
+    <section>
+        <div class="formDiv">
+            <legend class="heading" onclick="alert('Please register yourself!!')">Student Registration Form</legend>
+            <form class="form">
+                <p>
+                    <label for="fName">First Name: </label>
+                    <input type="text" name="fName" id="fName" placeholder="Enter your first name" autofocus required>
+                </p>
+                <p>
+                    <label for="lName">Last Name: </label>
+                    <input type="text" name="lName" id="lName" placeholder="Enter your last name" required>
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required placeholder="it should contain @"  pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*">
+                </p>
+                <p>
+                    <label for="mobile">Mobile: </label>
+                    <input type="tel" name="mobile" id="mobile" pattern="[0-9]{10}" maxlength="10" required
+                        placeholder="only 10 digits are allowed">
+                </p>
+                <p>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="Gender" id="male" checked> Male
+                <input type="radio" name="Gender" id="female"> Female
+            </p>
+                <p>
+                    <label for="dob">Date Of Birth: </label>
+                    <input type="date" name="dob" id="dob" required>
+                </p>
+                <p>
+                    <label for="address" class="address">Address: </label>
+                    <textarea name="address" id="address" rows="3" required></textarea>
+                </p>
+                <p>
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city" pattern="/^[a-zA-z]+$/" title="Enter only alphabets" required>
+                </p>
+                <p>
+                    <label for="pin">Area PIN: </label>
+                    <input type="tel" name="pin" id="pin" pattern="[0-9]{6}" maxlength="6" placeholder="XXXXXX" required>
+                </p>
+                <p>
+                    <label for="state">State: </label>
+                    <input type="text" name="state" id="state" required>
+                </p>
+                <p>
+                    <label for="qualification">Qualification: </label>
+                    <select name="qualification" id="qualification" value="Select Qualification" required>
+                        <!-- <option>Select Qualification</option> -->
+                        <option>High School</option>
+                        <option>Diploma</option>
+                        <option>Under Grad</option>
+                        <option>Post Grad</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="specialization">Specialization: </label>
+                    <input type="checkbox" name="specs" id="cs">Computer Science <br>
+                    <input type="checkbox" name="specs" id="it">Information Technology <br>
+                    <input type="checkbox" name="specs" id="ca">Computer Architecture <br>
+                    <input type="checkbox" name="specs" id="tc">Tele Communication
+                </p>
+                <p>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" pattern="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{5,}$"
+                    title="Password must have at least 5 characters, including 1 uppercase, 1 lowercase, and 1 number" placeholder="Password must have at least 5 characters, including 1 uppercase, 1 lowercase, and 1 number" required>
+                </p>
+                <br>
+                <button type="submit" class="btns" onsubmit="alert('Form has been submitted!')">Resistered</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function myFunc()
+        {
+            alert("Page Loaded");
+        }
+    </script>
+</body>
+
+</html>

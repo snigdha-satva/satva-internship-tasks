@@ -1,0 +1,86 @@
+.formDiv {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f0ecec;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.heading {
+    padding: 0px;
+    color: rgb(105, 7, 7);
+    text-decoration-line: underline;
+    margin-left: 78%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+form input[type='radio'] {
+    width: 3%;
+    margin-left: 10px;
+}
+
+form input[type='checkbox'] {
+    width: 5%;
+    margin: 5px;
+    /* padding: 1px; */
+}
+
+select {
+    margin: 10px;
+}
+
+textarea {
+    width: 152%;
+    margin: 10px;
+    resize: vertical;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+input {
+    display: table-cell;
+    font-size: 15px;
+    /* margin-left: 20px; */
+    width: 151%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#dob {
+    cursor: pointer;
+}
+
+form {
+    display: table;
+    width: 60%;
+}
+
+p {
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+    width: 20%;
+    margin: 10px;
+}
+
+.address {
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.btns {
+    color: white;
+    background-color: rgb(1, 90, 1);
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
