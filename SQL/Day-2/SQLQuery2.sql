@@ -69,7 +69,7 @@ SELECT
     COUNT(o.OrderId) AS [Total Orders],
     SUM(o.TotalAmount) AS [Total Amount Spent]
 FROM Customers c
-LEFT JOIN Orders o ON c.CustomerId = o.CustomerId 
+JOIN Orders o ON c.CustomerId = o.CustomerId 
     AND YEAR(o.OrderDate) = 2024
 GROUP BY c.CustomerId, c.CustomerName
 ORDER BY c.CustomerId;

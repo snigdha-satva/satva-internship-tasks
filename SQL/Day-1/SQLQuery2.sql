@@ -204,8 +204,7 @@ VALUES ('Test Project', 3, '2024-01-01', 50000.00, 'Cancelled');
 
 SELECT * FROM projects;
 
-DELETE FROM projects
-WHERE project_name = 'Test Project' AND status = 'Cancelled';
+DELETE FROM projects;
 
 SELECT * FROM projects;
 
