@@ -3,7 +3,7 @@ CREATE TABLE students (
 	"Name" VARCHAR(255),
 	"Marks" INT
 );
-
+DROP TABLE students;
 -- Insert three student
 INSERT INTO students ("Name", "Marks") VALUES('AAA', 50);
 INSERT INTO students ("Name", "Marks") VALUES('BBB', 30);
@@ -44,8 +44,8 @@ DO $$
         UPDATE balance SET "Amount" = "Amount" - 1000 WHERE "Name" = 'A';
         UPDATE balance SET "Amount" = "Amount" + 1000 WHERE "Name" = 'B';
         COMMIT;
-    ELSE
-        ROLLBACK;
+    --ELSE
+        --ROLLBACK;
     END IF;
 END $$;
 
@@ -82,8 +82,10 @@ SELECT "department", COUNT(*) AS employee_count FROM employees GROUP BY "departm
 SELECT 
 	"name",
 	"salary",
-	RANK() OVER (ORDER BY "salary" DESC) AS "salary"
-	FROM employees;
+	RANK() OVER (ORDER BY "salary" DESC) AS salary_rank
+	FROM employees
+	ORDER BY salary_rank DESC
+	LIMIT 3; 
 
 
 
