@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ObjectData {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding: 20px;
+  margin: 15px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ObjectData:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.ObjectName {
+  display: flex;
+  justify-content: left;
+}
+
+
+.ObjectStatus {
+  display: flex;
+  justify-content: left;
+  gap: 3px;
+}
