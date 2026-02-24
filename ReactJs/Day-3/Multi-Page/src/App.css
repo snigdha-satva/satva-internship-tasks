@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #333;
+}
+
+.pageName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.navItems a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navItems a:hover {
+  color: #1db954;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.homePage div {
+  margin: 0.5rem 0;
+}
+
+.homePage a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.homePage a:hover {
+  color: #1db954;
+}
+
+.aboutPage {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.aboutPage h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #f0f0f0;
+}
+
+.aboutPage p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ccc;
+}
+
+.User {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}

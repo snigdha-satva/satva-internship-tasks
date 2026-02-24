@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1115;
+  font-family: Arial, sans-serif;
+  color: #e4e6eb;
+}
+
+.reducerCounter {
+  margin: 60px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #1a1d24;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.count {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.inputValue {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputValue input {
+  width: 120px;
+  padding: 8px;
+  font-size: 16px;
+  background: #2a2f3a;
+  border: 1px solid #3a3f4b;
+  border-radius: 6px;
+  color: #e4e6eb;
+  outline: none;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.inputValue input:focus {
+  border-color: #4a90e2;
+  background: #323844;
+}
+
+.actionButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.actionButtons button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4a90e2;
+  color: #ffffff;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.actionButtons button:hover {
+  background: #357bd8;
+}
+
+.actionButtons button:active {
+  transform: scale(0.97);
+}
+
+.history {
+  font-size: 14px;
+  color: #a0a4ad;
+  text-align: center;
+  word-break: break-word;
+}
