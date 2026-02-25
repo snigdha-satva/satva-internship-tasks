@@ -1,0 +1,61 @@
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout */
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-sider {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  width: 1164px
+}
+
+.app-content {
+  margin: 24px;
+}
+
+/* User Info */
+.user-info {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Login Page */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.login-card {
+  width: 350px;
+}
+
+/* Pages */
+.page-card {
+  padding: 16px;
+}
+
+/* Centered full-page result screens */
+.center-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
