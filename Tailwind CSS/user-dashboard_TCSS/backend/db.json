@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Snigdha",
+      "email": "snigdha@admin.com",
+      "password": "$2b$10$VUZBeDW4PXeZHmlpVX7rq.ah4W8UTWeFgA39GTSAHuO3f76cjETDq",
+      "roleId": 1
+    },
+    {
+      "name": "qqqq",
+      "email": "wer@ttt.ugh",
+      "password": "$2b$10$seV0.3AdrOcVlicdNOWhUeee99CYS8XqO5gtRqTy/QPL/teebGLDK",
+      "roleId": 3,
+      "id": 3
+    },
+    {
+      "name": "Harry",
+      "email": "harry@df.dfdfd",
+      "password": "$2b$10$x9aIJW27sBksD1.L4TR8M.tz9VdlsQWduA488p/5nDJ6X2/o1e9Fe",
+      "roleId": 3,
+      "id": 5
+    },
+    {
+      "name": "SSSS",
+      "email": "ssss@dsdd.dsfg",
+      "password": "$2b$10$XC2y2qYdz4QoSCCCZBBO4OyJyOuhOfT5p5zM34RbI1jupXHr0Dsjy",
+      "roleId": 4,
+      "id": 6
+    },
+    {
+      "name": "dfddsfsfd",
+      "email": "vcchg@fgfgf.gh",
+      "password": "$2b$10$S3X5RJgTG2mZBXnNpApW0OGkKYCl3dErDw3S3RjXvXhe7mg/1WJZO",
+      "roleId": 1,
+      "id": 7
+    }
+  ],
+  "permissions": [
+    {
+      "id": 1,
+      "permission": "ADD_USER"
+    },
+    {
+      "id": 2,
+      "permission": "VIEW_USER"
+    },
+    {
+      "id": 3,
+      "permission": "EDIT_USER"
+    },
+    {
+      "id": 4,
+      "permission": "DELETE_USER"
+    },
+    {
+      "id": 5,
+      "permission": "ADD_EMPLOYEES"
+    },
+    {
+      "id": 6,
+      "permission": "VIEW_EMPLOYEES"
+    },
+    {
+      "id": 7,
+      "permission": "EDIT_EMPLOYEES"
+    },
+    {
+      "id": 8,
+      "permission": "DELETE_EMPLOYEES"
+    },
+    {
+      "id": 9,
+      "permission": "ADD_PROJECTS"
+    },
+    {
+      "id": 10,
+      "permission": "VIEW_PROJECTS"
+    },
+    {
+      "id": 11,
+      "permission": "EDIT_PROJECTS"
+    },
+    {
+      "id": 12,
+      "permission": "DELETE_PROJECTS"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "role": "ADMIN",
+      "allowed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "role": "HR",
+      "allowed": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "role": "SUPERVISOR",
+      "allowed": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": 4,
+      "role": "MANAGER",
+      "allowed": [
+        9,
+        10,
+        11,
+        12,
+        2
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "dfdfd12",
+      "email": "apkisepic@gmail.com",
+      "department": "dsfdfdsffdf",
+      "position": "ererefdfdf",
+      "phone": "34344343"
+    },
+    {
+      "name": "dfdfd",
+      "email": "snigdha@satvasolutions.com",
+      "department": "dhdbff",
+      "position": "ergdfgdgd",
+      "phone": "45454545",
+      "id": 2
+    },
+    {
+      "name": "bnnb",
+      "email": "nvbv@gfgfg.fghgvc",
+      "department": "ddfgdyre",
+      "position": "343432424",
+      "phone": "dfdfdte545",
+      "id": 3
+    },
+    {
+      "name": "fsdfsfds",
+      "email": "dfdscxvdfsg@dsfddsgt.fghhjc",
+      "department": "dhdbff",
+      "position": "ergdfgdgd",
+      "phone": "2342343443",
+      "id": 4
+    },
+    {
+      "name": "dfdfd",
+      "email": "snigdha@dfdfdf.fghfgfh",
+      "department": "rtdfggbg",
+      "position": "yygffgfg",
+      "phone": "454545453w442",
+      "id": 5
+    },
+    {
+      "name": "Hsdsdc",
+      "email": "snigdha@sadfgfggtvasolutions.com",
+      "department": "fgdfgfdfgfg",
+      "position": "ghhfghb vcb",
+      "phone": "4452435435",
+      "id": 6
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "dfdfd",
+      "description": "srtrtdssdfdsf",
+      "status": "completed",
+      "startDate": "2026-02-18",
+      "endDate": "2026-03-28"
+    },
+    {
+      "name": "gfg",
+      "description": "ffdfdfdf",
+      "status": "completed",
+      "startDate": "2026-02-19",
+      "endDate": "2026-03-28",
+      "id": 2
+    },
+    {
+      "name": "gfger",
+      "description": "fgdfggdfd",
+      "status": "completed",
+      "startDate": "2026-02-27",
+      "endDate": "2026-03-20",
+      "id": 3
+    },
+    {
+      "name": "rtretr",
+      "description": "rtetrt",
+      "status": "active",
+      "startDate": "2026-02-10",
+      "endDate": "2026-03-26",
+      "id": 4
+    },
+    {
+      "name": "ghgjfhffgfhj",
+      "description": "fhjfghhfhdgddtfft",
+      "status": "completed",
+      "startDate": "2026-02-27",
+      "endDate": "2026-03-13",
+      "id": 5
+    },
+    {
+      "name": "gdfdrfgfdg",
+      "description": "dfgdfdfretetet",
+      "status": "active",
+      "startDate": "2026-02-16",
+      "endDate": "2026-03-18",
+      "id": 6
+    },
+    {
+      "name": "qwqeeqwe",
+      "description": "34234324232rsdfdsfvdfcxv",
+      "status": "on-hold",
+      "startDate": "2026-02-09",
+      "endDate": "2026-03-12",
+      "id": 7
+    }
+  ]
+}
