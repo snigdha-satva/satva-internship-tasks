@@ -13,7 +13,7 @@ const useAuth = () => {
 
   const hasPermission = (module, action) => {
     if (!user) return false;
-    if (loading) return false;
+    if (loading) return <Spin />;
 
     const role = roles.find((r) => r.id === user.roleId);
     if (!role) return false;

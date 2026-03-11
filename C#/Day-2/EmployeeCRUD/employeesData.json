@@ -1,0 +1,52 @@
+[
+  {
+    "ID": 1,
+    "FirstName": "Snigdha",
+    "LastName": "Pandey",
+    "Gender": "Female",
+    "Email": "snigdhapandey@gmail.com",
+    "Phone": "1234567899",
+    "Designation": 0,
+    "Salary": 30000.0
+  },
+  {
+    "ID": 2,
+    "FirstName": "Ishu",
+    "LastName": "dfdfd",
+    "Gender": "Female",
+    "Email": "ishu@gmail.com",
+    "Phone": "2323232323",
+    "Designation": 1,
+    "Salary": 34000.0
+  },
+  {
+    "ID": 3,
+    "FirstName": "virat",
+    "LastName": "sdsd",
+    "Gender": "Male",
+    "Email": "virat@g.cp",
+    "Phone": "2121212121",
+    "Designation": 1,
+    "Salary": 50000.0
+  },
+  {
+    "ID": 4,
+    "FirstName": "wewew",
+    "LastName": "fgfgdf",
+    "Gender": "Male",
+    "Email": "snigdha4545@gmdf.dfdf",
+    "Phone": "2323232323",
+    "Designation": 1,
+    "Salary": 34000.0
+  },
+  {
+    "ID": 5,
+    "FirstName": "fjgh",
+    "LastName": "sfgh",
+    "Gender": "Male",
+    "Email": ".a@g.co",
+    "Phone": "1234567890",
+    "Designation": 0,
+    "Salary": 12000.0
+  }
+]

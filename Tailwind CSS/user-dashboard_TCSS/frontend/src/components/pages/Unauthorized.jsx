@@ -12,7 +12,7 @@ function Unauthorized() {
         subTitle="You do not have permission to access this page."
         extra={
           <Button type="primary" onClick={() => navigate("/")}>
-            Back to Login
+            Back to Dashboard
           </Button>
         }
       />
