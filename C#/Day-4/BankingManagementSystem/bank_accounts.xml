@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account>
+    <AccountNumber>23C1177E</AccountNumber>
+    <HolderName>Snigdha</HolderName>
+    <Balance>2520.00</Balance>
+    <Transactions>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>2000</Amount>
+        <Date>2026-03-12T14:48:58.7342915+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>500</Amount>
+        <Date>2026-03-12T14:49:24.5488203+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="WithdrawTransaction">
+        <Amount>100</Amount>
+        <Date>2026-03-12T14:50:03.6133051+05:30</Date>
+        <TransactionType>Withdrawal</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="InterestTransaction">
+        <Amount>120.00</Amount>
+        <Date>2026-03-12T14:51:09.5574702+05:30</Date>
+        <TransactionType>Interest</TransactionType>
+      </Transaction>
+    </Transactions>
+  </Account>
+  <Account>
+    <AccountNumber>CFFD1257</AccountNumber>
+    <HolderName>f f f f</HolderName>
+    <Balance>22969</Balance>
+    <Transactions>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>23333</Amount>
+        <Date>2026-03-12T15:21:56.9072358+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>90</Amount>
+        <Date>2026-03-12T15:22:32.434888+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="WithdrawTransaction">
+        <Amount>454</Amount>
+        <Date>2026-03-12T15:24:25.4272138+05:30</Date>
+        <TransactionType>Withdrawal</TransactionType>
+      </Transaction>
+    </Transactions>
+  </Account>
+  <Account>
+    <AccountNumber>BEBCC3F3</AccountNumber>
+    <HolderName>ddfd dfdf</HolderName>
+    <Balance>2756.2500</Balance>
+    <Transactions>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>1000</Amount>
+        <Date>2026-03-12T18:02:29.4531291+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="DepositTransaction">
+        <Amount>2000</Amount>
+        <Date>2026-03-12T18:04:18.2290101+05:30</Date>
+        <TransactionType>Deposit</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="WithdrawTransaction">
+        <Amount>500</Amount>
+        <Date>2026-03-12T18:05:25.1962895+05:30</Date>
+        <TransactionType>Withdrawal</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="InterestTransaction">
+        <Amount>125.00</Amount>
+        <Date>2026-03-12T18:10:27.6193347+05:30</Date>
+        <TransactionType>Interest</TransactionType>
+      </Transaction>
+      <Transaction xsi:type="InterestTransaction">
+        <Amount>131.2500</Amount>
+        <Date>2026-03-12T18:12:27.2587217+05:30</Date>
+        <TransactionType>Interest</TransactionType>
+      </Transaction>
+    </Transactions>
+  </Account>
+</ArrayOfAccount>

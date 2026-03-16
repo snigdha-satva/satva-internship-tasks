@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RestoreUseStaticGraphEvaluation>false</RestoreUseStaticGraphEvaluation>
+  </PropertyGroup>
+</Project>
+

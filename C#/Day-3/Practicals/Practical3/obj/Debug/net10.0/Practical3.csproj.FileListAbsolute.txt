@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\bin\Debug\net10.0\Practical3.exe
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\bin\Debug\net10.0\Practical3.deps.json
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\bin\Debug\net10.0\Practical3.runtimeconfig.json
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\bin\Debug\net10.0\Practical3.dll
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\bin\Debug\net10.0\Practical3.pdb
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.sourcelink.json
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.dll
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\refint\Practical3.dll
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.pdb
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\Practical3.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Practice\C#\Day-3\Practicals\Practical3\obj\Debug\net10.0\ref\Practical3.dll
